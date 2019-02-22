@@ -1,0 +1,8 @@
+
+record(calcout, "$(P):count") {
+	field(SCAN, "1 second")
+	field(VAL, "7")
+	field(INPA, "$(P):count.VAL NPP")
+	field(INPB, "2")
+	field(CALC, "A+B")
+}

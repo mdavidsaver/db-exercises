@@ -1,0 +1,17 @@
+
+record(calcout, "$(P):sine:cnt") {
+  field(SCAN, ".1 second")
+  field(CALC, "A+B")
+  field(INPA, "$(P):sine:cnt.VAL NPP")
+  field(INPB, "0.01")
+  field(OCAL, "sin(A)")
+  field(DOPT, "Use OCAL")
+  field(OUT , "$(P):sine PP")
+}
+
+record(ai, "$(P):sine") {
+  field(HIGH, "0.5")
+  field(HSV , "MINOR")
+  field(LOW , "-0.7")
+  field(LSV , "MAJOR")
+}
